@@ -18,13 +18,16 @@ author = "agent"
 task = "workflow.run"
 args = "Python App"
 
-# [[workflows.workflow]]
-# name = "Python App"
-# author = "agent"
+[[workflows.workflow]]
+name = "Python App"
+author = "agent"
 
-# [[workflows.workflow.tasks]]
-# task = "shell.exec"
-# args = "python app.py"
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python app.py"
 
-# [workflows.workflow.metadata]
-# outputType = "console"
+[workflows.workflow.metadata]
+outputType = "console"
+
+[nix]
+channel = "stable-25_05"
