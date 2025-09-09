@@ -8,19 +8,51 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div>
-    <h1>Jovian Careers</h1>
-    <img src = "https://4c7adf22-b91e-4353-8887-f6b5bf4883f5-00-39kb9ve32hpzo.sisko.replit.dev/static/bg.jpg" height = "320" alt = "background image" >
+  <div id="container">
+    <header>
+      <h1>Jovian Careers</h1>
+      <p class="subtitle">Building the future of technology, one hire at a time</p>
+    </header>
 
-    <h2>About Jovian Careers</h2>
-    <p>It is a long established fact that a reader will be     distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    <img src="{{ url_for('static', filename='bg.jpg') }}" alt="Jovian Careers Background">
 
-    <h2>Open positions</h2>
-    <p>todo -- show the jobs here</p>
-    <div >
-      <button>Contact Us</button>
-      <p>copy right 2025</p>
-    </div>
+    <main>
+      <section class="about-section">
+        <h2>About Jovian Careers</h2>
+        <p class="body_text">Welcome to Jovian Careers, where innovation meets opportunity. We are a leading technology company dedicated to creating cutting-edge solutions that transform industries and improve lives. Our team of passionate professionals works on exciting projects ranging from artificial intelligence and machine learning to web development and data science.</p>
+        <p class="body_text">At Jovian, we believe in fostering a collaborative environment where creativity thrives and every team member can reach their full potential. Join us in our mission to build the future of technology.</p>
+      </section>
+
+      <section class="jobs-section">
+        <h2>Open Positions</h2>
+        <div class="job-list">
+          <div class="job-item">
+            <h3>Senior Software Engineer</h3>
+            <p>Full-time • Remote • $120,000 - $160,000</p>
+          </div>
+          <div class="job-item">
+            <h3>Data Scientist</h3>
+            <p>Full-time • San Francisco, CA • $110,000 - $150,000</p>
+          </div>
+          <div class="job-item">
+            <h3>Product Manager</h3>
+            <p>Full-time • New York, NY • $130,000 - $170,000</p>
+          </div>
+          <div class="job-item">
+            <h3>Frontend Developer</h3>
+            <p>Full-time • Remote • $90,000 - $130,000</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <button class="cta-button">Contact Us</button>
+      <div class="footer-info">
+        <p>&copy; 2025 Jovian Careers. All rights reserved.</p>
+        <p>Email: careers@jovian.com | Phone: (555) 123-4567</p>
+      </div>
+    </footer>
   </div> 
 </body>
 </html>
