@@ -25,18 +25,13 @@
 
       <section class="jobs-section">
         <h2>Open Positions</h2>
-        <div>
+        <div class="job-list">
           {% for job in jobs %}
-            <div>
-              <h4>{{job['title']}}</h4>
+            <div class="job-item">
+              <h3 class="job-title">{{job['title']}}</h3>
+              <p class="job-location"><strong>Location:</strong> {{job['location']}}</p>
+              <p class="job-salary"><strong>Salary:</strong> {{job['salary']}}</p>
             </div>
-            <div>
-              <b>Location:</b>{{job['location']}}
-            </div>
-            <div>
-              <b>Salary:</b>{{job['salary']}}
-            </div>
-          </div>
           {% endfor %}
         </div>
       </section>
