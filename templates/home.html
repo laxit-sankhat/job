@@ -27,11 +27,7 @@
         <h2>Open Positions</h2>
         <div class="job-list">
           {% for job in jobs %}
-            <div class="job-item">
-              <h3 class="job-title">{{job['title']}}</h3>
-              <p class="job-location"><strong>Location:</strong> {{job['location']}}</p>
-              <p class="job-salary"><strong>Salary:</strong> {{job['salary']}}</p>
-            </div>
+           {% include 'job-item.html' %}
           {% endfor %}
         </div>
       </section>
