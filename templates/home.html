@@ -10,7 +10,7 @@
 <body>
   <div id="container">
     <header>
-      <h1>Jovian Careers</h1>
+      <h1>{{company_name}} Careers</h1>
       <p class="subtitle">Building the future of technology, one hire at a time</p>
     </header>
 
@@ -25,23 +25,19 @@
 
       <section class="jobs-section">
         <h2>Open Positions</h2>
-        <div class="job-list">
-          <div class="job-item">
-            <h3>Senior Software Engineer</h3>
-            <p>Full-time • Remote • $120,000 - $160,000</p>
+        <div>
+          {% for job in jobs %}
+            <div>
+              <h4>{{job['title']}}</h4>
+            </div>
+            <div>
+              <b>Location:</b>{{job['location']}}
+            </div>
+            <div>
+              <b>Salary:</b>{{job['salary']}}
+            </div>
           </div>
-          <div class="job-item">
-            <h3>Data Scientist</h3>
-            <p>Full-time • San Francisco, CA • $110,000 - $150,000</p>
-          </div>
-          <div class="job-item">
-            <h3>Product Manager</h3>
-            <p>Full-time • New York, NY • $130,000 - $170,000</p>
-          </div>
-          <div class="job-item">
-            <h3>Frontend Developer</h3>
-            <p>Full-time • Remote • $90,000 - $130,000</p>
-          </div>
+          {% endfor %}
         </div>
       </section>
     </main>
