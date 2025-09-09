@@ -104,6 +104,9 @@ img {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .job-item::before {
@@ -120,6 +123,11 @@ img {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
     border-left-color: #2ecc71;
+}
+
+.job-info {
+    flex: 1;
+    margin-right: 20px;
 }
 
 .job-title {
@@ -146,16 +154,17 @@ img {
 .apply-button {
     background: linear-gradient(135deg, #2ecc71, #27ae60);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 0.95em;
-    margin-top: 15px;
     transition: all 0.3s ease;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    flex-shrink: 0;
+    height: fit-content;
 }
 
 .apply-button:hover {
@@ -242,5 +251,18 @@ footer {
     
     .job-item {
         padding: 15px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .job-info {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .apply-button {
+        align-self: center;
+        width: 100%;
+        max-width: 200px;
     }
 }
