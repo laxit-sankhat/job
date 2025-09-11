@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Jovian Careers</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  {% include 'nav.html' %}
+  <div id="container">
+    <header>
+      <h1>About {{company_name}}</h1>
+      <p class="subtitle">Innovation, Excellence, and Growth</p>
+    </header>
+
+    <img src="{{ url_for('static', filename='bg.jpg') }}" alt="About Jovian Careers">
+
+    <main>
+      <section class="about-section">
+        <h2>Our Mission</h2>
+        <p class="body_text">At Jovian Careers, we are committed to building the future of technology through innovative solutions and exceptional talent. Our mission is to create cutting-edge products that transform industries while fostering a collaborative environment where every team member can thrive.</p>
+        
+        <h2>Our Values</h2>
+        <p class="body_text">We believe in innovation, integrity, collaboration, and continuous learning. These core values guide everything we do, from the products we build to the culture we create for our employees.</p>
+        
+        <h2>Company History</h2>
+        <p class="body_text">Founded in 2020, Jovian has grown from a small startup to a leading technology company. We've successfully launched multiple products in AI, machine learning, and web development, serving clients worldwide.</p>
+        
+        <h2>Our Team</h2>
+        <p class="body_text">Our diverse team of 200+ professionals includes software engineers, data scientists, designers, and business strategists from around the globe. Together, we're building tomorrow's technology today.</p>
+
+        <h2>Courses We Offer</h2>
+        <div class="courses-section">
+          <div class="course-item">
+            <h3>Full Stack Web Development</h3>
+            <p>Learn modern web development with React, Node.js, and databases</p>
+          </div>
+          <div class="course-item">
+            <h3>Data Science & Machine Learning</h3>
+            <p>Master Python, statistics, and ML algorithms for data analysis</p>
+          </div>
+          <div class="course-item">
+            <h3>Cloud Computing & DevOps</h3>
+            <p>Learn AWS, Docker, and deployment strategies</p>
+          </div>
+        </div>
+
+        <h2>Upcoming Events</h2>
+        <div class="events-section">
+          <div class="event-item">
+            <h3>Tech Talk: AI in Healthcare</h3>
+            <p>Date: March 15, 2025 | Time: 6:00 PM</p>
+            <p>Join us for an insightful discussion on AI applications in healthcare</p>
+          </div>
+          <div class="event-item">
+            <h3>Career Fair 2025</h3>
+            <p>Date: April 2, 2025 | Time: 10:00 AM - 4:00 PM</p>
+            <p>Meet our hiring managers and explore career opportunities</p>
+          </div>
+          <div class="event-item">
+            <h3>Workshop: Modern React Development</h3>
+            <p>Date: April 20, 2025 | Time: 2:00 PM</p>
+            <p>Hands-on workshop covering latest React patterns and best practices</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://mail.google.com/mail/?view=cm&to=laxitsankhat@gmail.com&su=Question%20about%20job%20openings&body=My%20name:%20<your%20name%20here>%0D%0A%0D%0AMy%20questions:%20<enter%20question%20here>" target="_blank" class="cta-button">Contact Us</a>
+      <div class="footer-info">
+        <p>&copy; 2025 Jovian Careers. All rights reserved.</p>
+        <p>Email: careers@jovian.com | Phone: (555) 123-4567</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
