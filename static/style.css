@@ -276,6 +276,8 @@ img {
     letter-spacing: 0.5px;
     flex-shrink: 0;
     height: fit-content;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .apply-button:hover {
