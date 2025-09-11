@@ -300,6 +300,8 @@ img {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .cta-button:hover {
